@@ -3,8 +3,8 @@ import google.generativeai as genai
 
 st.set_page_config(page_title="Weed RK ai", page_icon="🤖", layout="centered")
 
-st.markdown("<h1 style='text-align: center; color: #00ffcc;'>🤖 Weed RK ai</h1>", unsafe_allowed_html=True)
-st.markdown("<p style='text-align: center; color: #888888;'>Your AI Assistant</p>", unsafe_allowed_html=True)
+st.markdown("<h1 style='text-align: center; color: #00ffcc;'>🤖 Weed RK ai</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #888888;'>Your AI Assistant</p>", unsafe_allow_html=True)
 st.write("---")
 
 GOOGLE_API_KEY = "AQ.Ab8RN6IWKCXIBQlCRsVioRx_IRIyxkPfkyriwjPpC1HyY2MhdA"
@@ -37,5 +37,5 @@ if user_question := st.chat_input("Ask a question..."):
     st.session_state.messages.append({"role": "assistant", "content": full_response})
 
 st.write("---")
-st.markdown("<p style='text-align: center; color: #555555; font-size: 12px;'>Designed & Developed with AI by Rajkumar</p>", unsafe_allowed_html=True)
+st.markdown("<p style='text-align: center; color: #555555; font-size: 12px;'>Designed & Developed with AI by Rajkumar</p>", unsafe_allow_html=True)
 
