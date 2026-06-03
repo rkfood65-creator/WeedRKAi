@@ -7,7 +7,8 @@ st.markdown("<h1 style='text-align: center; color: #00ffcc;'>🤖 Weed RK ai</h1
 st.markdown("<p style='text-align: center; color: #888888;'>Your AI Assistant</p>", unsafe_allow_html=True)
 st.write("---")
 
-GOOGLE_API_KEY = "AQ.Ab8RN6IWKCXIBQlCRsVioRx_IRIyxkPfkyriwjPpCl11yY2WhdA"
+GOOGLE_API_KEY = "AIzaSyAz_Your_New_Valid_Gemini_API_Key_Here"
+
 
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
